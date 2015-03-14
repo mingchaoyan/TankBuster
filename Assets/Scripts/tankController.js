@@ -12,5 +12,4 @@ function Update () {
 		transform.Translate(Vector3(20, 0, 0));
 		Start();
 	}
-
 }
