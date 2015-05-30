@@ -18,7 +18,7 @@ function aniSprite (columnSize:int,rowSize:int,colFrameStart:int,
 
     var u : int = index % columnSize;            
     var v : int = index / columnSize;             
-    var offset = Vector2 ((u + colFrameStart) * size.x, (1.0 - size.y) - (v + rowFrameStart) * size.y);     
+    var offset = Vector2 ((u + colFrameStart) * size.x, (v + rowFrameStart) * size.y);     
 
     renderer.material.mainTextureOffset = offset;       
     renderer.material.mainTextureScale     = size;          

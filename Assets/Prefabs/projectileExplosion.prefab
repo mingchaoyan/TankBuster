@@ -69,8 +69,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c45b9ef2f1d47634db872c9d1369588f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlaying: 1
   explisionSound: {fileID: 8300000, guid: e61304a40981c9441a9c7ff5cb942dd8, type: 3}
+  aniRowSize: 6
+  aniColSize: 3
+  aniRowStart: 0
+  aniColStart: 0
+  aniTotalFrames: 18
+  aniFramesPerSecond: 18
+  aniTotalTime: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

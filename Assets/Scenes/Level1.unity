@@ -217,6 +217,7 @@ GameObject:
   - 65: {fileID: 239554485}
   - 23: {fileID: 239554484}
   - 114: {fileID: 239554488}
+  - 114: {fileID: 239554489}
   m_Layer: 0
   m_Name: propeller
   m_TagString: Untagged
@@ -286,8 +287,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62151316e6980b41adfe66a0d1a425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
-  speed: 20
+--- !u!114 &239554489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 239554483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08fccbbd66d61b438b380fff44568b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &376635336
 GameObject:
   m_ObjectHideFlags: 0
