@@ -1,6 +1,8 @@
 ﻿var amtToSpeed:float = 1;
 var amtRotate:float = 0;
 var isMoving:boolean = true;
+var projectile : Rigidbody;
+var myProjectile : Rigidbody;
 function Start () {
 	amtRotate = 0.1*amtToSpeed;
 }
@@ -14,6 +16,8 @@ function Update () {
 			print(fwd);
 			if(Physics.Raycast(transform.position,fwd,100)){
 				print("it shoot!!!");
+				myProjectile = Instantiate(projectile, transform.position+fwd, transform.rotation);
+				myProjectile.velocity = fwd * 30;
 				isMoving = false;
 				Wait();
 			}
