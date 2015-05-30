@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11448830}
   - 114: {fileID: 11448832}
   m_Layer: 0
-  m_Name: explosion
+  m_Name: bombExplosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
 --- !u!23 &2348832
 Renderer:
   m_ObjectHideFlags: 1
@@ -49,8 +48,9 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
+  m_SortingLayerID: 0
 --- !u!33 &3348832
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -80,7 +80,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c45b9ef2f1d47634db872c9d1369588f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explision: {fileID: 8300000, guid: ed0926745a5421e49acd53cc8fa9c014, type: 3}
+  isPlaying: 1
+  explisionSound: {fileID: 8300000, guid: e1bed1a13ad40ac48a47989c4b391cb1, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

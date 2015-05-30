@@ -13,9 +13,7 @@ function Update () {
 		if (isMoving == true) {
 			transform.localEulerAngles.z -= amtRotate;
 			var fwd = transform.TransformDirection(Vector3.left);
-			print(fwd);
 			if(Physics.Raycast(transform.position,fwd,100)){
-				print("it shoot!!!");
 				myProjectile = Instantiate(projectile, transform.position+fwd, transform.rotation);
 				myProjectile.velocity = fwd * 30;
 				isMoving = false;

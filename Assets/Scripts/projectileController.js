@@ -1,14 +1,14 @@
 ﻿#pragma strict
-var explosionSound : AudioClip;
+var fireSound : AudioClip;
 var explosion : GameObject;
 function Start () {
-	AudioSource.PlayClipAtPoint(explosionSound, Vector3(0, 1, -5));
+	AudioSource.PlayClipAtPoint(fireSound, Vector3(0, 1, -5));
 }
 
 function OnCollisionEnter(collison: Collision) {
 	if (collison.gameObject.tag == "plane"){
-		//Instantiate(explosioin, Vector3(transform.position.x, transform.position.y, -1), 
-		//	Quaternion.identity);
+		Instantiate(explosion, Vector3(transform.position.x, transform.position.y, -1), 
+			Quaternion.identity);
 		Destroy(gameObject);
 	}
 }

@@ -14,12 +14,12 @@ GameObject:
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: projectile
+  m_Name: bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -27,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .970000029, z: -3}
-  m_LocalScale: {x: 1, y: .5, z: 1}
+  m_LocalPosition: {x: -2.58999991, y: 0, z: -2}
+  m_LocalScale: {x: .5, y: .125, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!23 &2300000
@@ -94,11 +94,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bea493ec76733ae429d8ece1e366a98a, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d3218e05c8ae9a40906780a11c445de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireSound: {fileID: 8300000, guid: 6b517ee00b79b834997b0be499272c12, type: 3}
-  explosion: {fileID: 100000, guid: ce1f5f04d89e4ea4d90222ba2b2c166c, type: 2}
+  explosion: {fileID: 148832, guid: 4f63b04aa5723f3418438d3a1ef129cd, type: 2}
+  bombSound: {fileID: 8300000, guid: b9b841671de943e4fb0627f14e334185, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
