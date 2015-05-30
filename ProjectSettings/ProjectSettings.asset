@@ -14,8 +14,8 @@ PlayerSettings:
   productName: TankBuster
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  defaultScreenWidth: 1024
-  defaultScreenHeight: 768
+  defaultScreenWidth: 800
+  defaultScreenHeight: 600
   defaultScreenWidthWeb: 600
   defaultScreenHeightWeb: 450
   m_RenderingPath: 1
