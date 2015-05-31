@@ -15,7 +15,6 @@ function OnCollisionEnter(collision:Collision) {
 			transform.position.x, transform.position.y,
 			-1), Quaternion.identity);
 		Destroy(gameObject);
-        Destroy(collision.gameObject);
 	}
 	if(collision.gameObject.tag == "projectile"){
 		Destroy(collision.gameObject);
