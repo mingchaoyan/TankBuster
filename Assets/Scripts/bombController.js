@@ -1,4 +1,5 @@
-﻿var explosion:GameObject;
+﻿var aniSprite;
+var explosion:GameObject;
 var bombSound:AudioClip;
 private var myExplosion;
 
@@ -13,10 +14,15 @@ function OnCollisionEnter(collision:Collision) {
 		myExplosion = Instantiate(explosion, Vector3(
 			transform.position.x, transform.position.y,
 			-1), Quaternion.identity);
-		Destroy(myExplosion, 0.5);
 		Destroy(gameObject);
 	}
 	if(collision.gameObject.tag == "projectile"){
 		Destroy(collision.gameObject);
+	}
+	if(collision.gameObject.tag == "ground") {
+		myExplosion = Instantiate(explosion, Vector3(
+			transform.position.x, transform.position.y,
+			-1), Quaternion.identity);	print("ground");
+		Destroy(gameObject);
 	}
 }
